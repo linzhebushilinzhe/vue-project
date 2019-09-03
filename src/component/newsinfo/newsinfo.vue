@@ -26,12 +26,13 @@ export default {
   },
   methods: {
     getNewsinfo() {
-      this.$http
+      //使用axios获取数据
+      this.axios
         .get("http://www.liulongbin.top:3005/api/getnew/" + this.id)
         .then(result => {
-          console.log(result.body.status);
-          if (result.body.status === 0) {
-            this.newsinfo = result.body.message[0];
+          console.log(result.data.status);
+          if (result.data.status === 0) {
+            this.newsinfo = result.data.message[0];
           } else {
             Toast("获取新闻信息失败");
           }

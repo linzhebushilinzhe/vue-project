@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h1>member</h1>
+        <h1>member
+            待完成
+        </h1>
     </div>
 </template>
 

@@ -33,9 +33,9 @@ export default {
     },
     methods:{
         getNewslist(){
-            this.$http.get('http://www.liulongbin.top:3005/api/getnewslist').then(result=>{
-                if(result.body.status===0){
-                    this.newsList=result.body.message
+            this.axios.get('http://www.liulongbin.top:3005/api/getnewslist').then(result=>{
+                if(result.data.status===0){
+                    this.newsList=result.data.message
                 }else{
                     Toast('获取新闻列表失败')
                 }
