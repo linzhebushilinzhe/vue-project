@@ -57,6 +57,6 @@ export default {};
         height:100%;
     } */
 .mui-scroll-wrapper {
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 </style>

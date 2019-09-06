@@ -1,0 +1,26 @@
+var friendsinfo=[
+    {username:'冰蓝',imgurl:'https://i2.hdslb.com/bfs/face/5a405a8d51893e28c65907cf959d1c1111162766.jpg',id:1},
+    {username:'f8',imgurl:'https://i2.hdslb.com/bfs/face/6b2ade215ea603b495648875c925172a863d16d4.jpg',id:2},
+    {username:'教练',imgurl:'https://i0.hdslb.com/bfs/face/17323892be2e17b50acadb89b2e385b493f5fb4d.jpg',id:3},
+    {username:'仅是合',imgurl:'https://i1.hdslb.com/bfs/face/6fc9a0428ad5bd02b948baa651a6521378bbc71a.jpg',id:4},
+    {username:'淋着',imgurl:'https://i0.hdslb.com/bfs/face/6ce560448c7b34d64d03f4023bc7d70aee74525c.jpg',id:5},
+    {username:'Minco',imgurl:'https://i2.hdslb.com/bfs/face/c2c9142bdb2cbe6778857c7f32377d946477b70d.jpg',id:6},
+    {username:'潘越',imgurl:'https://i2.hdslb.com/bfs/face/ae295583ff9b0c217912c9a67ee6a21ab1296ebd.jpg',id:7},
+    {username:'琴141',imgurl:'https://i1.hdslb.com/bfs/face/c433a484caa0f5fa768feff333b460782aa1e178.jpg',id:8},
+    {username:'生生',imgurl:'https://i1.hdslb.com/bfs/face/1ad13832c10e8018dc8e0e7671a6b8594ddab0c0.jpg',id:9},
+    {username:'tangjie',imgurl:'https://i2.hdslb.com/bfs/face/156d5d3b3f4b66d940365b3b0e3a809e1fcc0d97.jpg',id:10},
+    {username:'杨一',imgurl:'https://i1.hdslb.com/bfs/face/0130ab3a6db098b6eff0de68ea8100ba6728aca1.jpg',id:11},
+    {username:'应该有天堂',imgurl:'https://i2.hdslb.com/bfs/face/e0a0e50ccfdbfad65f791b4bc84e66d63571c45f.jpg',id:12},
+    {username:'乐斗仔仔',imgurl:'https://i2.hdslb.com/bfs/face/2996e22a24eed2d7767e452627a9130207defe6a.jpg',id:13},
+    {username:'张鑫',imgurl:'https://i1.hdslb.com/bfs/face/918f1377b00ebde63d7adfcc2bb9003929c2e238.jpg',id:14},
+    {username:'左右',imgurl:'https://i1.hdslb.com/bfs/face/d240e567dc02513c45eacf66abebe558cd4d5fff.jpg',id:15},
+    {username:'元气',imgurl:'https://i1.hdslb.com/bfs/face/fb5e9695659de43c81adfa366d8543b6dbc24790.jpg',id:16},
+    {username:'李沅君',imgurl:'https://i1.hdslb.com/bfs/face/918f1377b00ebde63d7adfcc2bb9003929c2e238.jpg',id:17},
+    {username:'力元君',imgurl:'https://i1.hdslb.com/bfs/face/b831ab8e458d7763d397c41f7b1298fe20a0d096.jpg',id:18},
+    {username:'四季萌芽',imgurl:'https://i1.hdslb.com/bfs/face/41bedf18266e592fb6748ca5d4a6d1399328131c.jpg',id:19},
+    {username:'阿刁',imgurl:'https://i2.hdslb.com/bfs/face/c1fd54a5ee72dc2a09335c88dba0293316a93760.jpg',id:20},
+    {username:'藤原拓海',imgurl:'https://i1.hdslb.com/bfs/face/9c3b11fecdf10d081c944ae8297e6457b3adb64a.jpg',id:21},
+    {username:'夏树',imgurl:'https://i2.hdslb.com/bfs/face/06a07dad46ecb426e26e3340b3ae4e6f308066ea.jpg',id:22},
+    {username:'AE86',imgurl:'https://i1.hdslb.com/bfs/face/ea7e2bf0d354f5d4e72852cd275b53437a802a53.jpg',id:23}
+]
+export default friendsinfo

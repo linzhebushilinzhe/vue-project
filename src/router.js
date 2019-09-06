@@ -15,6 +15,7 @@ import usermsg from '../src/component/usermsg.vue'
 
 import accountsafe from '../src/component/accountsafe.vue'
 import msginform from '../src/component/msginform.vue'
+import friend from '../src/component/friend.vue'
 const router = new VueRouter({
     routes:[
         {path:'/',redirect:'/home'},
@@ -27,7 +28,8 @@ const router = new VueRouter({
         {path:'/home/share/:id',component:imginfo},
         {path:'/home/problem',component:usermsg},
         {path:'/setting/accountsafe',component:accountsafe},
-        {path:'/setting/msginform',component:msginform}
+        {path:'/setting/msginform',component:msginform},
+        {path:'/member/:id',component:friend}
 
     ],
     linkActiveClass:'mui-active'    

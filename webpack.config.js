@@ -23,6 +23,11 @@ module.exports={
             filename:'index.html'
         }),
         new VueLoaderPlugin(),
+        new webpack.ProvidePlugin({
+            $:"jquery",
+            jQuery:"jquery",
+            "window.jQuery":"jquery"
+        })
     ],
     module:{
         rules:[
