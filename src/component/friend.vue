@@ -75,7 +75,7 @@ export default {
   background: #f7f7f7;
   
   position: fixed;
-  bottom: 0px;
+  bottom: 50px;
   justify-content: space-around;
   align-items: center;
   width: 100%;
