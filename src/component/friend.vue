@@ -42,7 +42,8 @@ export default {
           this.msglist.push({msg:this.msg,id:this.index++})
           this.$nextTick(()=>{
 					  window.scrollTo(0,this.$refs.singleHeight.offsetHeight-window.innerHeight)
-				  }) 
+          }) 
+          this.msg=''
       },
       getimg(){
         this.friendimg=friendsinfo
@@ -75,7 +76,7 @@ export default {
   background: #f7f7f7;
   
   position: fixed;
-  bottom: 50px;
+  bottom: 0px;
   justify-content: space-around;
   align-items: center;
   width: 100%;
