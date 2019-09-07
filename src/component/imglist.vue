@@ -20,17 +20,17 @@ export default {
       list: [
         {
           img_url:
-            "images/tvphoto/tv1.jpg",
+            require('../images/tvphoto/tv1.jpg'),
           id: 1
         },
         {
           img_url:
-            "images/tvphoto/tv2.jpg",
+            require('../images/tvphoto/tv2.jpg'),
           id: 2
         },
         {
           img_url:
-            "images/tvphoto/tv3.jpg",
+            require('../images/tvphoto/tv3.jpg'),
           id: 3
         }
       ]
