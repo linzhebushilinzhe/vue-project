@@ -25,9 +25,9 @@ export default {
     data(){
         return{
             lunbolist:[
-                {img:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1936559306,183335904&fm=26&gp=0.jpg'},
-                {img:'https://imgsa.baidu.com/forum/w%3D580/sign=4971d1015ae736d158138c00ab514ffc/38e04e540923dd54a73138b5df09b3de9e8248a5.jpg'},
-                {img:'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4067318029,576814558&fm=26&gp=0.jpg'}
+                {img:require('../../images/lunbo/spiderman1.jpg'),id:1},
+                {img:require('../../images/lunbo/spiderman2.jpg'),id:2},
+                {img:require('../../images/lunbo/spiderman3.jpg'),id:3}
             ]
         }
     }

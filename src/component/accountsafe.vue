@@ -9,7 +9,7 @@
               <img
                 class="head-img mui-action-preview"
                 id="head-img1"
-                src="https://i1.hdslb.com/bfs/face/918f1377b00ebde63d7adfcc2bb9003929c2e238.jpg"
+                :src="userhead.img"
                 style="height:40px"
               />
             </span>
@@ -51,3 +51,12 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data(){
+    return{
+      userhead:{img:require('../images/userhead/user.jpg')}
+    }
+  }
+}
+</script>

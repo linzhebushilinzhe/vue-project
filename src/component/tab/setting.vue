@@ -5,7 +5,7 @@
         <ul class="mui-table-view mui-table-view-chevron">
           <li class="mui-table-view-cell mui-media">
             <a class="mui-navigate-right" href="#account">
-              <img class="mui-media-object mui-pull-left head-img" id="head-img" src="https://i1.hdslb.com/bfs/face/918f1377b00ebde63d7adfcc2bb9003929c2e238.jpg" style="height:40px" />
+              <img class="mui-media-object mui-pull-left head-img" id="head-img" :src="userhead.img" style="height:40px" />
               <div class="mui-media-body">
                 Hello MUI
                 <p class="mui-ellipsis">账号:hellomui</p>
@@ -47,7 +47,13 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      userhead:{img:require('../../images/userhead/user.jpg')}
+    }
+  }
+};
 </script>
 <style  scoped>
 /* .mint-header.is-fixed{

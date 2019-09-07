@@ -1,4 +1,5 @@
 <template>
+  
   <div class="box" ref="singleHeight">
     
     <header class="mui-bar mui-bar-nav">
@@ -11,7 +12,7 @@
                 <p>{{item.msg}}</p> 
             </div>
             <div class="sjx"></div>
-            <img :src="friendimg[friendid].imgurl" style="height:40px" >
+            <img :src="userhead.img" style="height:40px" >
         </div>
     </div>
     
@@ -31,7 +32,8 @@ export default {
       friendid:this.$route.params.id-1,
       index:0,
       msglist:[],
-      friendimg:[]
+      friendimg:[],
+      userhead:{img:require('../images/userhead/user.jpg')}
     };
   },
   created(){

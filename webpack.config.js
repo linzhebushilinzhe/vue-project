@@ -2,6 +2,7 @@ const path=require('path');
 const webpack=require('webpack');
 const htmlWebpackPlugin=require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
 module.exports={
     entry:'./src/main.js',
     output:{
@@ -35,7 +36,8 @@ module.exports={
             {test:/\.(jpg|png|bmp|jpep|gif)$/,use:'url-loader?limit=51295&name=[hash:8]-[name].[ext]'},//处理图片路径的loader
             {test:/\.(ttf|eot|svg|woff|woff2)/,use:'url-loader'},
             {test:/\.js$/,use:'babel-loader',exclude:/node_modules/},
-            {test:/\.vue$/,use:'vue-loader'}
+            {test:/\.vue$/,use:'vue-loader'},
+            {test: /\.(htm|html)$/i,loader: 'html-withimg-loader'}
         ]
     },
     resolve:{

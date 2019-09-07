@@ -6,6 +6,7 @@
     <ul class="mui-table-view" v-for="item in list" :key="item.id">
       <li class="mui-table-view-cell mui-media">
         <router-link :to="'/member/'+item.id">
+          <!-- <img class="mui-media-object mui-pull-left" :src="item.imgurl" style="height:40px" /> -->
           <img class="mui-media-object mui-pull-left" :src="item.imgurl" style="height:40px" />
           <div class="mui-media-body">
             <h4 class="friendname">{{item.username}}</h4>

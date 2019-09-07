@@ -20,17 +20,17 @@ export default {
       list: [
         {
           img_url:
-            "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2413247968.webp",
+            "images/tvphoto/tv1.jpg",
           id: 1
         },
         {
           img_url:
-            "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2542867516.webp",
+            "images/tvphoto/tv2.jpg",
           id: 2
         },
         {
           img_url:
-            "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2553707144.webp",
+            "images/tvphoto/tv3.jpg",
           id: 3
         }
       ]
