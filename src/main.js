@@ -17,6 +17,7 @@ import axios from 'axios';
 import VueAxios from 'vue-axios'
 import moment from 'moment'
 import $ from 'jquery'
+import store from './store.js'
 
 // import { Lazyload } from 'mint-ui';
 Vue.use(MintUI)
@@ -24,6 +25,7 @@ Vue.use(MintUI)
 Vue.prototype.$ajax = axios
 Vue.use(VueAxios,axios)
 Vue.use(VueRouter)
+
 //Vue.use(VueResource)
 // Vue.component(Header.name,Header)
 // Vue.component(Button.name,Button)
@@ -37,7 +39,8 @@ var vm=new Vue({
     render(createEle){
         return createEle(app);
     },
-    router
+    router,
+    store
 })
 
 

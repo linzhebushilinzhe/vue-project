@@ -6,7 +6,7 @@
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"  @click="goback"></a>
 			<h1 class="mui-title">{{friendimg[friendid].username}}</h1>
 		</header>
-    <div class="bubblebox" v-for="item in msglist" :key="item.id">
+    <div class="bubblebox" v-for="item in getmsglist" :key="item.index">
         <div class="bubble" > 
             <div class="jx">
                 <p>{{item.msg}}</p> 
@@ -25,6 +25,7 @@
 <script>
 import $ from 'jquery'
 import friendsinfo from '../friendsinfo.js'
+import store from '../store.js'
 export default {
   data() {
     return {
@@ -41,7 +42,14 @@ export default {
   },
   methods:{
       sendmsg(){ 
-          this.msglist.push({msg:this.msg,id:this.index++})
+          var arrcode=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w']
+          //console.log(this.$store)  store.state.a
+          console.log(this.friendid)
+          var item={msg:this.msg,id:this.index++}
+          
+          //this.$store.state[arrcode[this.friendid]].commit('pushmsglist',item)
+          this.$store.commit(arrcode[this.friendid]+'/pushmsglist',item)
+          console.log(this.$store.state.a)
           this.$nextTick(()=>{
 					  window.scrollTo(0,this.$refs.singleHeight.offsetHeight-window.innerHeight)
           }) 
@@ -54,7 +62,14 @@ export default {
         window.history.go(-1)
       }
       
-  }
+  },
+  computed:{
+    getmsglist(){
+      var arrcode=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w']
+      return this.$store.state[arrcode[this.friendid]].msglist
+    }
+  },
+  //store
 };
 </script>
 <style scoped>

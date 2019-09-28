@@ -39,7 +39,7 @@
         </ul>
         <ul class="mui-table-view">
           <li class="mui-table-view-cell" style="text-align: center;">
-            <mt-button type="primary" size="large">退出登录</mt-button>
+            <mt-button type="primary" size="large" @click="logout">退出登录</mt-button>
           </li>
         </ul>
       </div>
@@ -47,10 +47,24 @@
   </div>
 </template>
 <script>
+import { MessageBox } from 'mint-ui';
 export default {
   data(){
     return{
       userhead:{img:require('../../images/userhead/user.jpg')}
+    }
+  },
+  methods:{
+    logout(){
+      MessageBox({
+        title: '提示',
+        message: '确定执行此操作?',
+        showCancelButton: true
+      })
+      MessageBox.confirm('确定执行此操作?').then(action => {
+        
+      });
+
     }
   }
 };
