@@ -23,7 +23,7 @@ import store from './store.js'
 Vue.use(MintUI)
 
 Vue.prototype.$ajax = axios
-Vue.use(VueAxios,axios)
+Vue.use(VueAxios, axios)
 Vue.use(VueRouter)
 
 //Vue.use(VueResource)
@@ -31,16 +31,14 @@ Vue.use(VueRouter)
 // Vue.component(Button.name,Button)
 // Vue.component(Swipe.name, Swipe)
 // Vue.component(SwipeItem.name, SwipeItem)
-Vue.filter('timeParse',function(str,pattern='YYYY-MM-DD HH:mm:ss'){
-    return moment(str).format(pattern)
+Vue.filter('timeParse', function (str, pattern = 'YYYY-MM-DD HH:mm:ss') {
+  return moment(str).format(pattern)
 })
-var vm=new Vue({
-    el:"#app",
-    render(createEle){
-        return createEle(app);
-    },
-    router,
-    store
+var vm = new Vue({
+  el: "#app",
+  render(createEle) {
+    return createEle(app);
+  },
+  router,
+  store
 })
-
-

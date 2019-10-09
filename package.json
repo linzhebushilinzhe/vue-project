@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev2": "webpack-dev-server --hot --open --port 3001 ",
     "dev": "webpack-dev-server",
-    "built":"webpack --progress --hide-modules --config webpack.config.js"
+    "build": "webpack --progress --hide-modules --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
